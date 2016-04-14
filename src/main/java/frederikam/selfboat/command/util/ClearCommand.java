@@ -32,7 +32,7 @@ public class ClearCommand extends Command {
         }
         
         MessageHistory history = new MessageHistory(jda, channel);
-        List<Message> msgs = history.retrieve(100);
+        List<Message> msgs = history.retrieve(50);
 
         for (Message msg : msgs) {
             if(msg.getAuthor().equals(SelfBoat.myUser)){
