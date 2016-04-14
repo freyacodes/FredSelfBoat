@@ -19,6 +19,7 @@ import frederikam.selfboat.command.maintenance.TestCommand;
 import frederikam.selfboat.command.maintenance.UptimeCommand;
 import frederikam.jca.JCA;
 import frederikam.jca.JCABuilder;
+import frederikam.selfboat.command.fun.TextCommand;
 import java.io.InputStream;
 import java.util.Scanner;
 import javax.security.auth.login.LoginException;
@@ -113,5 +114,7 @@ public class SelfBoat {
         CommandManager.registerCommand("find", new FindCommand());
         CommandManager.registerCommand("dance", new DanceCommand());
         CommandManager.registerCommand("eval", new EvalCommand());
+        
+        CommandManager.registerCommand("s", new TextCommand("¯\\_(ツ)_/¯"));
     }
 }
