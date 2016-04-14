@@ -120,6 +120,6 @@ public class SelfBoat {
         CommandManager.registerCommand("s", new TextCommand("¯\\_(ツ)_/¯"));
         CommandManager.registerCommand("random", new RandomEmojiCommand());
         CommandManager.registerCommand("clear", new ClearCommand());
-        CommandManager.registerAlias("clear", "flush");
+        CommandManager.registerAlias("flush", "clear");
     }
 }
