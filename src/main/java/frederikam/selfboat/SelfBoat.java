@@ -21,6 +21,7 @@ import frederikam.jca.JCA;
 import frederikam.jca.JCABuilder;
 import frederikam.selfboat.command.fun.RandomEmojiCommand;
 import frederikam.selfboat.command.fun.TextCommand;
+import frederikam.selfboat.command.util.ClearCommand;
 import java.io.InputStream;
 import java.util.Scanner;
 import javax.security.auth.login.LoginException;
@@ -118,5 +119,7 @@ public class SelfBoat {
         
         CommandManager.registerCommand("s", new TextCommand("¯\\_(ツ)_/¯"));
         CommandManager.registerCommand("random", new RandomEmojiCommand());
+        CommandManager.registerCommand("clear", new ClearCommand());
+        CommandManager.registerAlias("clear", "flush");
     }
 }
