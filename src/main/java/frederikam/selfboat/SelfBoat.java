@@ -121,5 +121,6 @@ public class SelfBoat {
         CommandManager.registerCommand("random", new RandomEmojiCommand());
         CommandManager.registerCommand("clear", new ClearCommand());
         CommandManager.registerAlias("flush", "clear");
+        CommandManager.registerCommand("lenny", new TextCommand("( ͡° ͜ʖ ͡°)"));
     }
 }
